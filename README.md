@@ -1,10 +1,10 @@
-# 🛡️ Age of War - Platoon Battle Optimizer
+# Age of War - Platoon Battle Optimizer
 
 This Ruby script takes two sets of platoons — your own army and the enemy's — and tries all possible permutations to find the best order of attack. The goal is to **win at least 3 out of 5 matches** by using the advantage mapping between different platoon types.
 
 ---
 
-## ⚔️ Problem Statement
+## Problem Statement
 
 Each side has 5 platoons defined in the format:  
 `Type#Count;Type#Count;...`
@@ -13,7 +13,7 @@ Each platoon has a specific advantage over others. If a platoon has an advantage
 
 ---
 
-## 🧠 Logic Summary
+## Logic Summary
 
 - We define each **Platoon** as a Ruby object with a type and count.
 - We use a static **ADVANTAGE_MAP** to check type superiority.
@@ -23,7 +23,7 @@ Each platoon has a specific advantage over others. If a platoon has an advantage
 
 ---
 
-## ✅ Example
+## Example
 
 ```ruby
 own = "Spearmen#10;Militia#30;FootArcher#20;LightCavalry#1000;HeavyCavalry#120"
@@ -32,7 +32,7 @@ puts find_winning_order(own, enemy)
 
 
 
-## Test Scenarios
+## Test Scenario
 
 // You can test the program by modifying or running the following examples: //
 
